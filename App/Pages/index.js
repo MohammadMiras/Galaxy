@@ -1,6 +1,6 @@
 const Home = () => {
     return <>
-        <h1>HDFSHF</h1>
+        <h1 className='fle'>HDFSHF</h1>
     </>
 }
 
