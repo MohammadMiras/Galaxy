@@ -3,7 +3,7 @@
 @tailwind utilities;
 html{
   direction:rtl;
-}
+}/* 
 @font-face {
   font-family: "iransans";
   src: url("../public/Fonts/IranSans/IRANSansXFaNum-Thin.woff2");
@@ -65,4 +65,4 @@ html{
   font-display: swap;
 }
 
-
+ */

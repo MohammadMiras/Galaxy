@@ -7,10 +7,11 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - /Galaxy/pages:/Galaxy/pages
-      - /Galaxy/styles:/Galaxy/styles
-      - /Galaxy/postcss.config.js:/Galaxy/postcss.config.js
-      - /Galaxy/tailwind.config.js:/Galaxy/tailwind.config.js
+      - /Galaxy/App/Pages:/Galaxy/pages
+      - /Galaxy/App/Styles:/Galaxy/styles
+      - /Galaxy/App/Components:/Galaxy/Components
+      - /Galaxy/App/PostCssConfig.js:/Galaxy/postcss.config.js
+      - /Galaxy/App/TailwindConfig.js:/Galaxy/tailwind.config.js
     command: >
       bash -c
       "
