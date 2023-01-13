@@ -12,6 +12,8 @@ services:
       - /Galaxy/App/Components:/Galaxy/Components
       - /Galaxy/App/PostCssConfig.js:/Galaxy/postcss.config.js
       - /Galaxy/App/TailwindConfig.js:/Galaxy/tailwind.config.js
+      - /Galaxy/App/NextConfig.js:/Galaxy/next.config.js
+      - /Galaxy/App/Next.js:/Galaxy/next.js
     command: >
       bash -c
       "

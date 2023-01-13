@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+html,
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
 /* 
 @font-face {
   font-family: "iransans";

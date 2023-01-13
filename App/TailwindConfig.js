@@ -17,8 +17,9 @@ module.exports = {
         Template: {
           color1: '#666565',
           color2: '#202020',
-          color3: '#dfdf19',
-          color4: '#afacac'
+          color3: '#f8f8f8',
+          color4: '#611bdd',
+          color5: '#5e87eb'
         }
       }
     },
