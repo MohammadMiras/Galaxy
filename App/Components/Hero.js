@@ -2,7 +2,7 @@ const Hero = () => {
     return <>
         <section 
         className="bg-center bg-cover"
-        style={{backgroundImage:`url("https://barakahit.net/html/Techmax/assets/img/home-bg.jpg")`}}
+        style={{backgroundImage:`url("https://s2.uupload.ir/files/home-bg_lrvr.jpg")`}}
         >
             <div className="max-w-7xl mx-10 px-20">
                 <div className="flex justify-center items-center pt-28">

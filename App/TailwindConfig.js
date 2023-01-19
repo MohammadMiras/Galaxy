@@ -19,7 +19,8 @@ module.exports = {
           color2: '#202020',
           color3: '#f8f8f8',
           color4: '#611bdd',
-          color5: '#5e87eb'
+          color5: '#5e87eb',
+          color6: '#611bdd61'
         }
       }
     },

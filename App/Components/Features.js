@@ -5,7 +5,7 @@ const Features = () => {
                 <div className="flex justify-center items-center py-10">
                     <div className="basis-full md:basis-2/4">
                         <div>
-                            <img src="https://barakahit.net/html/techmax/assets/img/choose-2.png" />
+                            <img src="https://s2.uupload.ir/files/choose-1_py3.png" />
                         </div>
                     </div>
                     <div className="pr-6 basis-full md:basis-2/4">
