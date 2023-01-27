@@ -10,8 +10,8 @@ const Services = () => {
     }, [])
     return <>
         <section>
-            <div className="max-w-7xl mx-10 px-20 py-20 ">
-                <div className="grid grid-cols-3 gap-3">
+            <div className="max-w-7xl mx-10 py-20 sm:px-20">
+                <div className="grid sm:grid-cols-3 grid-cols-1 gap-3">
                     <div className="py-9 px-7 shadow-xl rounded-2xl text-center transition-all duration-500 hover:translate-y-2 hover:bg-gradient-to-r hover:from-Template-color4 hover:to-Template-color5 hover:text-Template-color3 group" in="opacity-1" out="opacity-0">
                         <div className='flex justify-center items-center w-20 h-20 bg-Template-color3 rounded-full mx-auto my-5'>
                             <ElectricBoltIcon className='text-Template-color4 text-3xl font-iransans' />

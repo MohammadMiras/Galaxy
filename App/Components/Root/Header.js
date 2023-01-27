@@ -8,7 +8,7 @@ const Header = () => {
     return <>
         <section className='scroll'>
             <div className="fixed top-0 w-full py-5 z-20" in="bg-transparent" out="bg-Template-color3">
-                <div className="flex justify-between items-center max-w-7xl mx-10 px-20" >
+                <div className="hidden sm:flex justify-between items-center max-w-7xl mx-10 px-20" >
                     <p> Template </p>
                     <ul className="flex justify-center">
                         <li className="p-2">Home</li>

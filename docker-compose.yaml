@@ -18,6 +18,8 @@ services:
     command: >
       bash -c
       "
+        ln -s -f /galaxy/package.json /Galaxy/package.json
+        ln -s -f /galaxy/node_modules /Galaxy 
         npm run dev & \      
-        tail -f /dev/null
+        tail -f /dev/null      
       "

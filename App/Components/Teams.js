@@ -9,11 +9,11 @@ const Teams = () => {
     return <>
         <section className='py-10' >
             <h2 className='text-center mb-20 text-3xl font-bold text-Template-color1'>Expert Team Member</h2>
-            <div className='max-w-7xl mx-10 px-20'>
+            <div className='max-w-7xl mx-10 sm:px-20'>
                 <div className='flex w-full flex-wrap justify-center'>
                     {
                         teams?.map(item => <>
-                            <div className='basis-1 md:basis-1/2 lg:basis-1/4 px-2' key={item}>
+                            <div className='basis-full md:basis-1/2 lg:basis-1/4 px-2' key={item}>
                                 <div className='relative w-full h-64 overflow-hidden group rounded-md'>
                                     <Image
                                         src={`https://barakahit.net/html/techmax/assets/img/team/team-${item}.jpg`}

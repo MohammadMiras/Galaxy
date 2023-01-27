@@ -1,7 +1,7 @@
 const Features = () => {
     return <>
         <section >
-            <div className="max-w-7xl mx-10 px-20">
+            <div className="max-w-7xl mx-10 sm:px-20">
                 <div className="flex justify-center items-center py-10">
                     <div className="basis-full md:basis-2/4">
                         <div>
