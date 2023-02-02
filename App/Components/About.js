@@ -3,7 +3,7 @@ import Link from 'next/link'
 const About = () => {
     return <>
         <section
-            className='w-full py-16 text-center text-Template-color3 bg-center bg-cover'
+            className='w-full py-16 text-center text-Template-color3 bg-center bg-cover px-5 sm:px-0'
             style={{ backgroundImage: `url("https://barakahit.net/html/techmax/assets/img/banner-bg.jpg")` }}>
             <h2 className='text-4xl font-bold'>What do you know About us ?</h2>
             <p className='my-10 mx-auto max-w-4xl'>

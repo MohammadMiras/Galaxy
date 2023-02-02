@@ -4,7 +4,7 @@ const Footer = () => {
             className='relative w-full py-16 text-Template-color3 bg-center bg-cover z-10 after:-z-10 after:absolute after:w-full after:h-full after:top-0 after:bg-Template-color4 after:opacity-50'
             style={{ backgroundImage: `url("https://barakahit.net/html/techmax/assets/img/banner-bg.jpg")` }}
         >
-            <div className="max-w-7xl mx-10 ms:px-20">
+            <div className="max-w-7xl m-auto ms:px-20">
                 <div className="flex flex-wrap">
                     <div className="basis-full sm:basis-2/6 px-3">
                         <div className="mb-4 border-b-[1px] border-Template-color3">

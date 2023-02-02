@@ -10,7 +10,7 @@ const Counter = () => {
                 style={{ backgroundImage: `url("https://barakahit.net/html/techmax/assets/img/banner-bg.jpg")` }}
                 ref={ref}
                 className="w-full bg-cover bg-center py-20 bg-fixed">
-                <div className="flex sm:flex-row flex-col justify-center max-w-7xl mx-10 sm:px-20 gap-5 sm:gap-0">
+                <div className="flex sm:flex-row flex-col justify-center max-w-7xl m-autp sm:px-20 gap-5 sm:gap-0">
                     <div className="basis-full md:basis-1/4 px-5 text-white text-center ">
                         <NumberCount item={500} onScreen={onScreen}/>
                         <h3 className="text-xl">Company Project</h3>

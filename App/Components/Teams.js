@@ -9,7 +9,7 @@ const Teams = () => {
     return <>
         <section className='py-10' >
             <h2 className='text-center mb-20 text-3xl font-bold text-Template-color1'>Expert Team Member</h2>
-            <div className='max-w-7xl mx-10 sm:px-20'>
+            <div className='max-w-7xl mx-5 md:m-auto sm:px-20'>
                 <div className='flex w-full flex-wrap justify-center'>
                     {
                         teams?.map(item => <>

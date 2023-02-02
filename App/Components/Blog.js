@@ -5,7 +5,7 @@ const Blog = () => {
     const posts = [1, 2, 3]
     return <>
         <section className="bg-Template-color3 hidden">
-            <div className="max-w-7xl mx-10 px-20  py-16">
+            <div className="max-w-7xl mx-5 md:m-auto px-20  py-16">
                 <h2 className="text-center text-Template-color2 text-4xl">
                     Blog and News
                 </h2>
