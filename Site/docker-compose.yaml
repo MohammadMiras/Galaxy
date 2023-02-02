@@ -1,0 +1,25 @@
+version: "3.1"
+services: 
+  site:
+    image: mohammadmiras/galaxy
+    container_name: "GalaxySite"
+    working_dir: /Galaxy
+    ports:
+      - 3000:3000
+    volumes:
+      - /Galaxy/Site/App/Pages:/Galaxy/pages
+      - /Galaxy/Site/App/Styles:/Galaxy/styles
+      - /Galaxy/Site/App/Components:/Galaxy/Components
+      - /Galaxy/Site/App/Hooks:/Galaxy/Hooks
+      - /Galaxy/Site/App/PostCssConfig.js:/Galaxy/postcss.config.js
+      - /Galaxy/Site/App/TailwindConfig.js:/Galaxy/tailwind.config.js
+      - /Galaxy/Site/App/NextConfig.js:/Galaxy/next.config.js
+      - /Galaxy/Site/App/Next.js:/Galaxy/next.js
+    command: >
+      bash -c
+      "
+        ln -s -f /galaxy/package.json /Galaxy/package.json
+        ln -s -f /galaxy/node_modules /Galaxy 
+        npm run dev & \      
+        tail -f /dev/null      
+      "

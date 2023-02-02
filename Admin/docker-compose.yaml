@@ -1,0 +1,23 @@
+version: "3.1"
+services: 
+  site:
+    image: mohammadmiras/panel
+    container_name: "GalaxyAdmin"
+    working_dir: /GalaxyAdmin
+    ports:
+      - 3000:5173
+    volumes:
+      - /Galaxy/Admin/public:/GalaxyAdmin/publis
+      - /Galaxy/Admin/src:/GalaxyAdmin/src
+      - /Galaxy/Admin/index.html:/GalaxyAdmin/index.html
+      - /Galaxy/Admin/ViteConfig.jsx:/GalaxyAdmin/vite.config.js
+
+    command: >
+      bash -c
+      "
+        ln -s -f /panel/package-lock.json /GalaxyAdmin/package-lock.json
+        ln -s -f /panel/package.json /GalaxyAdmin/package.json
+        ln -s -f /panel/node_modules /GalaxyAdmin/node_modules
+        npm run dev & \      
+        tail -f /dev/null      
+      "
