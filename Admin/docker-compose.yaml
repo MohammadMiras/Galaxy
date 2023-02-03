@@ -10,7 +10,9 @@ services:
       - /Galaxy/Admin/public:/GalaxyAdmin/publis
       - /Galaxy/Admin/src:/GalaxyAdmin/src
       - /Galaxy/Admin/index.html:/GalaxyAdmin/index.html
+      - /Galaxy/Admin/TailwindConfig.jsx:/GalaxyAdmin/tailwind.config.js
       - /Galaxy/Admin/ViteConfig.jsx:/GalaxyAdmin/vite.config.js
+      - /Galaxy/Admin/PostCssConfig.jsx:/GalaxyAdmin/postcss.config.js
 
     command: >
       bash -c
