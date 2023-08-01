@@ -1,0 +1,116 @@
+# Dev Setup
+
+- OS (Ubuntu)
+  - Only 22.04 LTS
+  - Only from [ubunto.com](https://ubuntu.com/download/desktop/thank-you?version=22.04.1&architecture=amd64)
+  - Bootable image
+    - using [Startup Disk Creator](https://ubuntu.com/tutorials/create-a-usb-stick-on-ubuntu#3-launch-startup-disk-creator)
+    - or using [balenaEtcher](https://ubuntu.com/tutorials/install-ubuntu-desktop#3-create-a-bootable-usb-stick)
+  - Boot
+  - Choose **Install Ubuntu**
+    - Select English (US)
+  - Keyboard layout
+    - Enlish (US)
+  - DO NOT Connect to WiFi
+    - Reason: faster installation and async update after installation
+  - Minimal installation
+    - Make sure no box is selected
+  - Erase disk and install Ubuntu
+    - Always be ready to lose your machine
+    - Advanced features
+      - None
+  - Press **Install Now**
+    - Press **Continue**
+  - Where are you?
+    - Choose Tehran
+    - Press **Continue**
+  - Computer name = local
+  - User name = user
+  - Set password to 100 (you will be asked for it frequently)
+  - **DO NOT** choose *Log in automatically*
+  - **CHOOSE** Require my password to login
+  - Wait for installation
+  - **DO NOT** help Ubuntu
+    - Select **No, don't send system info**
+  - Privacy off
+  - Click Done (don't worry about progress)
+  
+---
+
+- Connect to WiFi
+- Setup [shecan.ir](https://shecan.ir/tutorials/)
+- Install software using our installation script
+  - `sudo mkdir /Temp`
+  - `sudo chmod 777 /Temp`
+  - `cd /Temp`
+  - `wget https://raw.githubusercontent.com/HolismHolding/Setup/main/Dev -O Setup`
+  - `sudo chmod 777 Setup`
+  - `sudo ./Setup`
+
+- **DO NOT** install any other extensions on VS Code
+
+- Update Ubuntu (using VPN or Shecan)
+  - Settings
+  - Software Update
+
+- Docker
+  - Login
+    - `docker login`
+  - In case of permission denied
+    - test with `sudo` and make sure it works
+    - if it works with `sudo`, run these commands
+      - `sudo gpasswd -a $USER docker`
+      - `newgrp docker`
+      - `sudo groupadd docker`
+      - `sudo usermod -aG docker ${USER}`
+      - `sudo usermod -aG docker $USER`
+
+- Git 
+  - Generate keys and add your public key to GitHub 
+    - Open terminal 
+    - `ssh-keygen -t ed25519 -C "your-email"`
+    - Enter 3 times 
+      - Accept default filename 
+      - Empty password 
+      - Empty password, again 
+    - GitHub 
+      - Settings 
+      - SSH and GPG keys 
+      - New SSH Key 
+      - Copy/paste your public key there 
+        - Using Files 
+        - Go to the home folder 
+        - Show hidden files 
+        - .ssh folder 
+        - id_ed25519.pub 
+        - Right-click, open with the Text Editor, then copy 
+    - Run `ssh -T git@github.com` to test the connection
+  - Introduce yourself to git 
+    - `git config --global user.email "your-email-of-github-here"` 
+    - `git config --global user.name "your name here"`
+
+- Chrome
+  - Do not send crash reports
+  - Sign in
+  - Extensions
+    - JSONViewer
+    - Grammarly
+    - React Developer Tools
+  - Add breakpoints
+    - xs (360)
+    - sm (640)
+    - md (768)
+    - lg (1024)
+    - xl (1280)
+    - xxl (1536)
+
+- VS Code
+  - Turn on sync (using GitHub)
+  - Word wrap
+    - Files => Preferences => Settings
+    - Search for “word wrap”
+    - Select “on” from the dropdown
+
+---
+
+## Happy coding!
