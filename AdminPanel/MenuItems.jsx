@@ -1,8 +1,8 @@
 import { BlogMenu } from 'Blog'
 
-const MainMenu  =
-[
-    ...BlogMenu
-]
+const MainMenu =
+    [
+        ...BlogMenu
+    ]
 
 export { MainMenu }
